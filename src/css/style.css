@@ -1,96 +1,3 @@
-/*  ==========================
-    BASE TYPOGRAPHY
-    This is added as a template to help start. 
-    You should change the fonts, font-sizes and anything else appropriate for your site.
-    ========================== */
-
-/* Optional, include a web font. @import must come before other styles. These examples are commented out */
-
-/*
-@import url('https://fonts.googleapis.com/css?family=Rubik:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed:400,500');
-*/
-
-/* The html and body selectors below set the base type for the entire page */
-html {
-  font-size: 1em;
-}
-
-body {
-  font-family: sans-serif;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #333;
-}
-
-
-/* This adds space between paragraphs and list items*/
-/* NOTE: most Navigations use list items so you will need to */
-/* explicity set the margins on those so this rule doesn't */
-/* mess up your navigation styling */
-p,
-li {
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-
-
-/* Base Styling for headings.
-  You can and should modify these to fit your site*/
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 500;
-  font-family: serif;
-}
-
-
-/* For each of your headings at minimum set the margin, size, line-height. 
-Adjust font-weight and other properties as needed. */
-
-h1 {
-  font-size: 5.063em;
-  line-height: 1;
-  margin: 0 0 0.5em 0;
-}
-
-h2 {
-  font-size: 3.375em;
-  line-height: 1.2;
-  margin: 1.5em 0 0.5em 0;
-}
-
-h3 {
-  font-size: 2.25em;
-  line-height: 1;
-  margin: 1.5em 0 0.25em 0;
-}
-
-h4 {
-  font-size: 1.5em;
-  line-height: 1;
-  margin: 1.5em 0 0.5em 0;
-  font-weight: 400;
-}
-
-h5 {
-  font-size: 1em;
-  line-height: 1;
-  margin: 1.5em 0 0.5em 0;
-  font-weight: 400;
-}
-
-h6 {
-  font-size: 1em;
-  line-height: 1.5;
-  margin: 1em 0 0 0;
-  font-weight: 400;
-  /* normal */
-  text-transform: uppercase;
-}
 
 /* ======================================================
    Responsive Styling and Layout
@@ -138,8 +45,304 @@ html {
       height: 100%;
   }
   
-  /* ================= ===========================
-  ADD YOUR CSS HERE 
-  ================================================ */
-  /* Add your CSS for the site here */
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body,html {
+      font-family: 'Poppins', arial;
+      overflow-x: hidden;
+  }
+  :root {
+      --h1 :#1e1964;
+      --blue : #34A1CD;
+      --dark-purple : #55527C;
+      --grey : #B4B2C5;
+      --pink :  #EA4C89;
+      --circle : #F4F3FF;
+      --light-pink : #FFF5F6;
+      
+  }
+  li {
+      list-style: none;
+  }
+  li:hover {
+      font-size: 20px;
+      font-weight: bold;
+      transform: scale(1.2);
+  }
+  h1 {
+      font-size: 50px;
+      color: var(--h1);
+      font-weight: 900;
+  }
+  h3 {
+      color: var(--grey);
+  }
+  p {
+      font-size: 16px;
+      color: var(--grey);
+  }
+  a {
+      text-decoration: none;
+  }
+  .ctn {
+      width: 100px;
+      padding: 8px 12px;
+      background: var(--h1);
+      color: whitesmoke;
+      border-radius: 5px;
+      text-align: center;
+  }
+  .ctn:hover {
+      background: white;
+      border: 1px solid var(--h1);
+      color: var(--h1);
+      font-weight: bold;
+  }
+  
+  .container{
+      width: 80%;
+      margin: 60px auto;
+  }
+  .row {
+      display: flex;
+      justify-content: center;
+  }
+  .col {
+      display: flex;
+      justify-content: center;
+  }
+  .highlight {
+      color: var(--blue);
+  }
+  .circle {
+      width: 500px;
+      height: 500px;
+      background: var(--circle);
+      position: absolute;
+      top: -40%;
+      right: -30%;
+      border-radius: 50%;
+      z-index: -1;
+  }
+  
+  .navbar {
+      width: 100%;
+      padding: 30px;
+      display: flex;
+      align-items: center;
+      justify-content:space-between;
+      position: relative;
+  }
+  .toggle-btn i {
+      font-size: 30px;
+      color: var(--dark-purple);
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      display: none;
+  }
+  .navbar .nav-list ul ,.social-icons ul{
+      display: flex;
+  }
+  .nav-list ul li, .social-icons ul li {
+      margin: 0px 30px;
+      color: var(--dark-purple);
+      font-size: 18px;
+      cursor: pointer;
+  }
+  .social-icons ul li:hover {
+      transform: scale(1.4);
+  }
+  .logo {
+      width: 50px;
+  }
+  
+  .header {
+      margin-top: 0px;
+      height: 100vh;
+      position: relative;
+  }
+  .header .col-1 {
+      width: 100%;
+      flex-direction: column;
+      padding: 30px;
+  }
+  .header .col-2 {
+      width: 100%;
+  }
+  .header .col-2  img {
+      max-width: 80%;
+  }
+  .header p {
+   margin: 30px auto;
+  }
+  
+  .title {
+      text-align: center;
+      margin-bottom: 60px;
+  }
+  .grid-wrapper {
+      display: grid;
+      grid-template-columns:repeat(auto-fit, minmax(400px, auto));
+      grid-gap: 50px;
+  }
+  .icon-title{
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+  }
+  .icon-title img {
+      margin-right: 20px;
+  }
+  .icon-title h2 {
+      font-size: 20px;
+      color: var(--h1);
+  }
+  .grid-box .highlight {
+      color: var(--dark-purple);
+      font-weight: bold;
+  }
+  .grid-box {
+      padding: 30px;
+  }
+  .skills .grid-box:hover {
+      box-shadow: 0px 0px 30px #0000002f;
+      border-radius: 20px;
+  }
+  
+  .portfolio {
+      margin-top: 150px;
+      position: relative;
+  }
+  .portfolio .title {
+      text-align: left;
+  }
+  .portfolio .title .ctn-title {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .ctn-title h4 {
+      color: var(--dark-purple);
+      cursor: pointer;
+  }
+  .ctn-title .highlight {
+      color: var(--pink);
+  }
+  .portfolio .grid-wrapper{
+      grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+      grid-gap: 20px;
+  }
+  .rect-bg {
+      width: 700px;
+      height: 400px;
+      background: var(--light-pink);
+      position: absolute;
+      top: -10%;
+      right: -20%;
+      z-index: -1;
+      border-radius: 20px;
+  }
+  
+  .portfolio .grid-box{
+      position: relative;
+  }
+  .hover {
+      position: absolute;
+      top: 15%;
+      left: 15%;
+      width: 60%;
+      height: 60%;
+      background: var(--dark-purple);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-direction: column;
+      color: whitesmoke;
+      border-radius: 10px;
+      transform: scaleX(0);
+      transition: transform 0.5s ease;
+      
+  }
+  .hover .highlight {
+      color: var(--pink);
+  }
+  
+  .portfolio .grid-box:hover .hover {
+      transform: scaleX(1);
+  }
+
+  .copyright p{
+      color: var(--dark-purple);
+      font-weight: bold;
+  }
+  
+  .dropdown .dropdown-menu {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  /*****************************
+  * . contact-area
+  ***************************** */
+
+ @media only screen and (max-width: 767px) {
+   .contact-info {
+     margin-bottom: 30px; } }
+ .contact-info .single-info {
+   font-size: 16px;
+   font-weight: 300; }
+   .contact-info .single-info:not(:last-child) {
+     margin-bottom: 20px; }
+   .contact-info .single-info h5 {
+     font-size: 16px;
+     font-weight: 500;
+     color: #7d91aa; }
+   .contact-info .single-info p:last-child {
+     margin-bottom: 0; }
+   .contact-info .single-info a {
+     color: #333;
+     display: inline-block;
+     margin-right: 8px; }
+ 
+ .contact-form {
+   border: 1px solid #cad4de;
+   padding: 40px;
+   border-radius: 3px; }
+   .contact-form input:not([type="submit"]),
+   .contact-form textarea {
+     border: 1px solid #cad4de;
+     width: 100%;
+     background-color: #f9fbfd;
+     margin-bottom: 30px;
+     border-radius: 3px;
+     height: 40px;
+     text-indent: 20px; }
+     .contact-form input:not([type="submit"])::-webkit-input-placeholder,
+     .contact-form textarea::-webkit-input-placeholder {
+       color: #7d91aa; }
+     .contact-form input:not([type="submit"])::-moz-placeholder,
+     .contact-form textarea::-moz-placeholder {
+       color: #7d91aa; }
+     .contact-form input:not([type="submit"]):-ms-input-placeholder,
+     .contact-form textarea:-ms-input-placeholder {
+       color: #7d91aa; }
+     .contact-form input:not([type="submit"]):-moz-placeholder,
+     .contact-form textarea:-moz-placeholder {
+       color: #7d91aa; }
+     .contact-form input:not([type="submit"]):focus,
+     .contact-form textarea:focus {
+       outline: none;
+       border: 1px solid; }
+   .contact-form textarea {
+     height: 120px;
+     padding-top: 10px; }
