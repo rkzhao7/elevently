@@ -295,54 +295,50 @@ html {
   * . contact-area
   ***************************** */
 
- @media only screen and (max-width: 767px) {
-   .contact-info {
-     margin-bottom: 30px; } }
- .contact-info .single-info {
-   font-size: 16px;
-   font-weight: 300; }
-   .contact-info .single-info:not(:last-child) {
-     margin-bottom: 20px; }
-   .contact-info .single-info h5 {
-     font-size: 16px;
-     font-weight: 500;
-     color: #7d91aa; }
-   .contact-info .single-info p:last-child {
-     margin-bottom: 0; }
-   .contact-info .single-info a {
-     color: #333;
-     display: inline-block;
-     margin-right: 8px; }
- 
- .contact-form {
-   border: 1px solid #cad4de;
-   padding: 40px;
-   border-radius: 3px; }
-   .contact-form input:not([type="submit"]),
-   .contact-form textarea {
-     border: 1px solid #cad4de;
-     width: 100%;
-     background-color: #f9fbfd;
-     margin-bottom: 30px;
-     border-radius: 3px;
-     height: 40px;
-     text-indent: 20px; }
-     .contact-form input:not([type="submit"])::-webkit-input-placeholder,
-     .contact-form textarea::-webkit-input-placeholder {
-       color: #7d91aa; }
-     .contact-form input:not([type="submit"])::-moz-placeholder,
-     .contact-form textarea::-moz-placeholder {
-       color: #7d91aa; }
-     .contact-form input:not([type="submit"]):-ms-input-placeholder,
-     .contact-form textarea:-ms-input-placeholder {
-       color: #7d91aa; }
-     .contact-form input:not([type="submit"]):-moz-placeholder,
-     .contact-form textarea:-moz-placeholder {
-       color: #7d91aa; }
-     .contact-form input:not([type="submit"]):focus,
-     .contact-form textarea:focus {
-       outline: none;
-       border: 1px solid; }
-   .contact-form textarea {
-     height: 120px;
-     padding-top: 10px; }
+  .contact-section{
+    padding: 130px 0 100px;
+    .btn_2{
+      background-color:#191d34;
+      padding: 18px 60px;
+      border-radius: 50px;
+      margin-top: 0;
+    }
+  }
+  .contact_info .info_item {
+    position: relative;
+    padding-left: 45px; }
+    .contact_info .info_item i {
+      position: absolute;
+      left: 0;
+      top: 0;
+      font-size: 20px;
+      line-height: 24px;
+      color: #e45447;
+      font-weight: 600; }
+    .contact_info .info_item h6 {
+      font-size: 16px;
+      line-height: 24px;
+      color: "Roboto", sans-serif;
+      font-weight: bold;
+      margin-bottom: 0px;
+      color: #222222; }
+      .contact_info .info_item h6 a {
+        color: #222222; }
+    .contact_info .info_item p {
+      font-size: 14px;
+      line-height: 24px;
+      padding: 2px 0px; }
+  
+    .contact_form .form-group textarea {
+      resize: none; }
+      .contact_form .form-group textarea.form-control {
+        height: 134px; }
+  .contact_form .primary-btn {
+    background: #e45447;
+    color: #fff;
+    margin-top: 20px;
+    border: 2px solid #e45447; }
+    .contact_form .primary-btn:hover {
+      color: #000;
+      border: 2px solid #90acd1;
+      background: transparent; }
