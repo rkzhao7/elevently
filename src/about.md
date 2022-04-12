@@ -4,7 +4,9 @@ layout: base.njk
 tags: navItem
 ---
 # {{About}}
-
+<div class="toggle-btn">
+        <i class="fa fa-bars"></i>
+    </div>
   <header class="header container">
         <div class="circle"></div>
         <div class="row hero">
@@ -25,32 +27,32 @@ tags: navItem
   <section class="skills container">
         <div class="title">
             <h3>MY SKILLS</h3>
-            <h1>My Expertise</h1>
+            <h1>Expertise</h1>
         </div>
         <div class="grid-wrapper">
             <div class="grid-box">
                 <div class="icon-title">
-                    <h2>Skill</h2>
+                    <h2>Problem solver</h2>
                 </div>
-                <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur obcaecati incidunt pariatur in doloribus repellat hic nesciunt accusamus tempora. Facere.</p>
+                <p> Obtaining good command of theoretic knowledge and exerimental and diy skill, very adaptable and good at leaning</p>
             </div>
             <div class="grid-box">
                 <div class="icon-title">
-                    <h2>Skill</h2>
+                    <h2>Team player</h2>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur obcaecati incidunt pariatur in doloribus repellat hic nesciunt accusamus tempora. Facere.</p>
+                <p>I am esay-going and congenial, with a strong sense of responsibility.</p>
             </div>
             <div class="grid-box">
                 <div class="icon-title">
-                    <h2>Skill</h2>
+                    <h2>Good command of computer skills</h2>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur obcaecati incidunt pariatur in doloribus repellat hic nesciunt accusamus tempora. Facere.</p>
+                <p>Familiar with diferent versions of windows os and office application software, able to program with html and css languages.Abtained some experience and understanding about other widely-used software like photoshop, After effect, Illustrator.</p>
             </div>
             <div class="grid-box">
                 <div class="icon-title">
-                    <h2>Skill</h2>
+                    <h2>Language</h2>
                 </div>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur obcaecati incidunt pariatur in doloribus repellat hic nesciunt accusamus tempora. Facere.</p>
+                <p>With fairly good of reading and writing ability and speaking authentic mandarin chinese.</p>
             </div>
         </div>
     </section>

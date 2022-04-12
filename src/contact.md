@@ -5,60 +5,67 @@ tags: navItem
 ---
 # {{Contact}}
 
-<div class="toggle-btn">
+ <div class="toggle-btn">
         <i class="fa fa-bars"></i>
     </div>
-<h2>Contact Us</h2>
-        <p>Malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae.</p>
-    </div>
-</div>        
-    <div class="contact-area sp">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 contact-info">
-                <div class="single-info">
-                    <h5>Phone</h5>
-                    <p>+(121) - 237 - 979 - 3580</p>
-                </div>
-                <div class="single-info">
-                    <h5>Email</h5>
-                    <p>r382004689@gmail.com</p>
-                </div>
-                <div class="single-info">
-                    <h5>Address</h5>
-                    <p>30 Heathcote Vista, Cassinfort, LA</p>
-                </div>
-                <div class="single-info">
-                    <h5>Social</h5>
-                    <p>
-                        <a href="#" class="fa fa-facebook"></a>
-                        <a href="#" class="fa fa-twitter"></a>
-                        <a href="#" class="fa fa-linkedin"></a>
-                        <a href="#" class="fa fa-pinterest"></a>
-                    </p>
-                </div>
-            </div>
-            <div class="col-md-7">
-                <form action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col-lg-6">
-                            <input type="text" placeholder="Name">
+  <header class="header container">
+        <div class="circle"></div>
+
+  <section class="contact_area section_gap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact_info">
+                        <div class="info_item">
+                            <i class="lnr lnr-home"></i>
+                            <h6>NewYork, United States</h6>
+                            <p>Brooklyn </p>
                         </div>
-                        <div class="col-lg-6">
-                            <input type="email" placeholder="Email">
+                        <div class="info_item">
+                            <i class="lnr lnr-phone-handset"></i>
+                            <h6><a href="#">+1 (646) 8339 137</a></h6>
+                            <p>Mon to Fri</p>
                         </div>
-                        <div class="col-lg-12">
-                            <input type="text" placeholder="Subject">
-                        </div>
-                        <div class="col-lg-12">
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <div class="col-lg-12">
-                            <input class="button" type="submit" value="Send Message">
+                        <div class="info_item">
+                            <i class="lnr lnr-envelope"></i>
+                            <h6><a href="#">r382004689@gmail.com</a></h6>
+                            <p>Send me your query anytime!</p>
                         </div>
                     </div>
-                </form>
+                </div>
+                <div class="col-lg-9">
+                    <form class="row contact_form" action="contact_process.php" method="post" id="contactForm"
+                        novalidate="novalidate">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter Subject">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" name="message" id="message" rows="1" placeholder="Enter Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button type="submit" value="submit" class="primary-btn"><span>Send Message</span></button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</div>
+    </section>
+
+  <script>
+        let togglebtn = document.querySelector('.toggle-btn')
+        let navbar = document.querySelector('.navbar')
+
+        togglebtn.addEventListener('click', ()=>{
+            navbar.classList.toggle('mobile-nav')
+        } )
+    </script>
