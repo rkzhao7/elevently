@@ -26,8 +26,7 @@ tags: navItem
 
   <section class="skills container">
         <div class="title">
-            <h3>MY SKILLS</h3>
-            <h1>Expertise</h1>
+            <h1>MY SKILLS</h1>
         </div>
         <div class="grid-wrapper">
             <div class="grid-box">

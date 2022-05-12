@@ -12,7 +12,7 @@ tags: navItem
         <div class="row hero">
             <div class="col col-1">
                 <h1>I’m<span class="highlight"> Ruikun Zhao.</span> </h1>
-                <p>Hi, I'm Ruikun, a web designer from China.
+                <p>Hi, I'm Ruikun, a graphic designer from China.
                     I‘m a beginner who are always improving.</p>
                 <a href="/contact" class="ctn">Contact</a>    
             </div>
