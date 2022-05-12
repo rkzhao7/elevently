@@ -3,7 +3,7 @@ title: About
 layout: base.njk
 tags: navItem
 ---
-# {{About}}
+# {{title}}
 <div class="toggle-btn">
         <i class="fa fa-bars"></i>
     </div>

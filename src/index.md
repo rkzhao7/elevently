@@ -3,7 +3,7 @@ title: Home
 layout: base.njk
 tags: navItem
 ---
-# {{Home}}
+# {{title}}
 <div class="toggle-btn">
         <i class="fa fa-bars"></i>
     </div>
@@ -35,27 +35,28 @@ tags: navItem
         </div>
 <div class="grid-wrapper">
             <div class="grid-box">
-                <img src="/images/prj-1.png" alt="">
-                 <p>This is the responsive site that I create on my web design class.</p>
+                <img src="/images/prj-2.png" alt="">
+                <p>This is the first web page that I create on my Multimedia class</p>
                 <div class="hover">
                     <h4>Project 1</h4>
-                    <a href="https://rzhao12.github.io/Projecr1/" class="highlight">Github </a>
-                </div>
-            </div>
-<div class="grid-box">
-                <img src="/images/prj-2.png" alt="">
-                <p>This is the first web page that I create on my Introduction to Multimedia class</p>
-                <div class="hover">
-                    <h4>Project 2</h4>
                     <a href="https://rkzhao7.github.io/project2/" class="highlight">Github</a>
                 </div>
             </div>
+            <div class="grid-box">
+                <img src="/images/prj-1.png" alt="">
+                 <p>This is the responsive site that I create on my web design class.</p>
+                <div class="hover">
+                    <h4>Project 2</h4>
+                    <a href="https://rzhao12.github.io/Projecr1/" class="highlight">Github </a>
+                </div>
+            </div>
+
 <div class="grid-box">
                 <img src="/images/prj-3.png" alt="">
-                <p>This is the exercise for the responsive site that I work on my web design class</p>
+                <p>This is the animation project for animal adoption that I work on my multimedia class</p>
                 <div class="hover">
                     <h4>Project 3</h4>
-                    <a href="#" class="highlight">Github</a>
+                    <iframe  width="225" height="90" src="https://www.youtube.com/embed/F-sBVJ2rHOQ" frameborder="0" allowfullscreen></iframe>
                 </div>
             </div>
     </section>

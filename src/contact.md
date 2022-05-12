@@ -3,7 +3,7 @@ title: Contact
 layout: base.njk
 tags: navItem
 ---
-# {{Contact}}
+# {{title}}
 
  <div class="toggle-btn">
         <i class="fa fa-bars"></i>
